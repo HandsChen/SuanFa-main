@@ -1,10 +1,10 @@
 package common;
 
 public class TreeNode {
-    private int val;     // 节点值
-    private TreeNode left; // 左子节点引用
-    private TreeNode right; // 右子节点引用
-    private int height; //高度
+    public int val;     // 节点值
+    public TreeNode left; // 左子节点引用
+    public TreeNode right; // 右子节点引用
+    public int height; //高度
 
     public TreeNode getLeft() {
         return left;
@@ -40,5 +40,11 @@ public class TreeNode {
 
     public void setHeight(int height) {
         this.height = height;
+    }
+
+    public TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 }
