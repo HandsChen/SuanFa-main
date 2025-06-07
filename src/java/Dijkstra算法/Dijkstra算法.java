@@ -23,7 +23,7 @@ public class Dijkstra算法 {
     }
 
     public static int[] Dijkstra(int[][] graph, int start) {
-        int[] dist = new int[graph.length]; //构建当前节点至其他节点的最小距离的数组
+        int[] dist = new int[graph.length]; //构建当前节点至其他节点的最小距离的数组  如果需要求解最短路径走过的所有节点，可以再dist变成二维数组，多出的一维用来存储上一个节点，最后从最后一个节点向头节点倒推
         boolean[] visited = new boolean[graph.length]; //构建当前节点访问与否的数组
         Arrays.fill(dist, Integer.MAX_VALUE); //数组初始值为int最大值，表示无穷大
         dist[start] = 0; //如果是到当前节点本身的最小距离，应该是0
